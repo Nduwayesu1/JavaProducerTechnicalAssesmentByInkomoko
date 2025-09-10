@@ -1,0 +1,15 @@
+spring:
+  kafka:
+    enabled: false
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+producer:
+  schedule:
+    enabled: false
+
+app:
+  crm:
+    base-url: http://localhost:8080
